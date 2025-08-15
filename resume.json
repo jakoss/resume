@@ -13,7 +13,7 @@
     "phone": "+48 721 043 077",
     "url": "https://github.com/jakoss",
     "image": "https://gravatar.com/avatar/be47884caaad28586216cc9ff22dab71717f6abea7402cc0142caa7b2cbd3c98?s=300",
-    "summary": "I’m a pragmatic and flexible software engineer with extensive experience in software architecture, backend systems, and mobile technologies.\nA passionate supporter of open source, I frequently contribute my own work to the community.\nWhile I’m always eager to learn and adopt new technologies, my core expertise lies in Android/Kotlin (mobile) and .NET (backend and tooling).\nAs a Technical Team Lead, I’ve focused on improving developer experience, establishing patterns, jumpstarting large projects, architecting solutions, and mentoring other developers.",
+    "summary": "I’m a pragmatic and flexible software engineer with extensive experience in software architecture, backend systems, and mobile technologies.\n\nA passionate supporter of open source, I frequently contribute my own work to the community.\n\nWhile I’m always eager to learn and adopt new technologies, my core expertise lies in Android/Kotlin (mobile) and .NET (backend and tooling).\n\nAs a Technical Team Lead, I’ve focused on improving developer experience, establishing patterns, jumpstarting large projects, architecting solutions, and mentoring other developers.",
     "location": {
       "city": "Cracow Metropolitan Area",
       "countryCode": "PL"
@@ -59,11 +59,16 @@
     {
       "name": "Distributed financial platform (client undisclosed)",
       "startDate": "2024-02",
-      "description": "I was part of a large team rebuilding a massive financial platform, transforming it from a monolithic, single-database design into a microservices architecture. The system comprises over 30 microservices and includes a complex framework to address scalability, availability, and data consistency challenges. It is designed to be highly configurable and extendable, with the ability to be deployed in the cloud or on-premises and built upon by customers.\nStack:\nASP.NET microservices with an internal gRPC communication layer and REST facades\nMicrofrontend architecture to support thousands of frontend applications\nMultiple abstractions over external systems (message brokers, databases, container orchestrators) to enable different configurations for various customers\nKey contributions:\nArchitecture design\nFocused on improving developer experience by creating a comprehensive set of reusable libraries\nDesigned project patterns to be easily understood and applied by AI agents",
+      "description": "I was part of a large team rebuilding a massive financial platform, transforming it from a monolithic, single-database design into a microservices architecture. The system comprises over 30 microservices and includes a complex framework to address scalability, availability, and data consistency challenges. It is designed to be highly configurable and extendable, with the ability to be deployed in the cloud or on-premises and built upon by customers.",
       "highlights": [
+        "ASP.NET microservices with an internal gRPC communication layer and REST facades",
+        "Microfrontend architecture to support thousands of frontend applications",
+        "Multiple abstractions over external systems (message brokers, databases, container orchestrators) to enable different configurations for various customers",
         "Over 20 microservices",
         "1,5 mln lines of code",
-        "Extensive set of libraries for both internal and external use (aka. Framework)"
+        "Extensive set of libraries for both internal and external use (aka. Framework)",
+        "Focus on improving developer experience by creating a comprehensive set of reusable libraries",
+        "Designed project patterns to be easily understood and applied by AI agents"
       ],
       "keywords": [
         "Backend",
@@ -103,7 +108,7 @@
       "name": "Kiru",
       "startDate": "2020-08",
       "endDate": "2022-04",
-      "description": "On mobile side:\nDevelopment of big (500k lines of code) Android mobile application based on MVI patterns using Jetpack Compose. Mobile (iOS and Android) team leader.\nOn Backend side:\nArchitecture and development of multiple microservices in AWS cloud.",
+      "description": "Distributed system for LATAM market to deliver payroll system services. Heavily microservices-oriented architecture with a focus on scalability and maintainability. Cloud architecture based on AWS services.",
       "keywords": [
         "Backend",
         "Android",
@@ -128,7 +133,7 @@
       "url": "https://www.empik.com/music",
       "startDate": "2019-11",
       "endDate": "2020-04",
-      "description": "The largest music streaming platform in Poland and a direct competitor to Spotify, later shut down by Empik after a few years.\nI served as Lead Android Developer, responsible for mobile app delivery, R&amp;D, and overall system architecture.",
+      "description": "The largest music streaming platform in Poland and a direct competitor to Spotify, later shut down by Empik after a few years.\n\nI served as Lead Android Developer, responsible for mobile app delivery, R&amp;D, and overall system architecture.",
       "keywords": [
         "Android"
       ],
