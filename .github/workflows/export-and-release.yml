@@ -1,0 +1,83 @@
+name: Export Resume and Create Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag to create (e.g. v1.0.0). If empty when triggered manually, uses a short sha-based tag.'
+        required: false
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run export script
+        run: npm run export
+
+      - name: Check for resume.pdf
+        id: find_pdf
+        run: |
+          set -e
+          if [ -f "resume.pdf" ]; then
+            echo "pdf_path=resume.pdf" >> $GITHUB_OUTPUT
+            echo "Found resume.pdf in repository root"
+          else
+            echo "resume.pdf not found in repository root" >&2
+            exit 1
+          fi
+
+      - name: Upload artifact (for debugging)
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdf
+          path: ${{ steps.find_pdf.outputs.pdf_path }}
+
+      - name: Determine release tag
+        id: release_tag
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            if [ -n "${{ github.event.inputs.tag }}" ]; then
+              echo "tag=${{ github.event.inputs.tag }}" >> $GITHUB_OUTPUT
+            else
+              shortsha=$(echo $GITHUB_SHA | cut -c1-7)
+              echo "tag=manual-$shortsha" >> $GITHUB_OUTPUT
+            fi
+          else
+            # push on tag
+            ref=${GITHUB_REF#refs/tags/}
+            echo "tag=$ref" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create GitHub release
+        id: create_release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ steps.release_tag.outputs.tag }}
+          release_name: ${{ steps.release_tag.outputs.tag }}
+          body: "Automated resume export PDF"
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload PDF to release
+        uses: actions/upload-release-asset@v2
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ${{ steps.find_pdf.outputs.pdf_path }}
+          asset_name: resume.pdf
+          asset_content_type: application/pdf

@@ -1,0 +1,276 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "meta": {
+    "theme": "jsonresume-theme-even",
+    "pdfRenderOptions": {
+      "format": "A4"
+    }
+  },
+  "basics": {
+    "name": "Jakub Syty",
+    "label": "Technical Team Lead at Euvic S.A.",
+    "email": "syty.jakub@gmail.com",
+    "phone": "+48 721 043 077",
+    "url": "https://github.com/jakoss",
+    "image": "https://gravatar.com/avatar/be47884caaad28586216cc9ff22dab71717f6abea7402cc0142caa7b2cbd3c98?s=300",
+    "summary": "I’m a pragmatic and flexible software engineer with extensive experience in software architecture, backend systems, and mobile technologies.\nA passionate supporter of open source, I frequently contribute my own work to the community.\nWhile I’m always eager to learn and adopt new technologies, my core expertise lies in Android/Kotlin (mobile) and .NET (backend and tooling).\nAs a Technical Team Lead, I’ve focused on improving developer experience, establishing patterns, jumpstarting large projects, architecting solutions, and mentoring other developers.",
+    "location": {
+      "city": "Cracow Metropolitan Area",
+      "countryCode": "PL"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "jakoss",
+        "url": "https://github.com/jakoss"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "jakub-syty",
+        "url": "https://www.linkedin.com/in/jakub-syty/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Euvic",
+      "position": "Software Developer -> Technical Team Lead",
+      "url": "https://www.euvic.com",
+      "startDate": "2016-03",
+      "endDate": null,
+      "summary": "I began my career at Euvic as a Software Developer, working on a wide range of projects—from media streaming solutions to financial platforms. Most of the projects described below were delivered during my time at Euvic."
+    },
+    {
+      "name": "Fundacja Media 3.0",
+      "position": "Software Developer",
+      "startDate": "2014-06",
+      "endDate": "2015-12",
+      "summary": "In this non-profit organization, I was responsible for delivering mobile projects using Xamarin and native technologies, as well as backend solutions built with Ruby on Rails."
+    },
+    {
+      "name": "Wyższa Szkoła Handlowa we Wrocławiu",
+      "position": "Guest Lecturer",
+      "startDate": "2019-06",
+      "endDate": "2020-03",
+      "summary": "Special lectures on programming fundamentals for elementary school teachers. This initiative aimed to enhance computer science competencies in preparation for programming lessons that later became part of the public education system."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Distributed financial platform (client undisclosed)",
+      "startDate": "2024-02",
+      "description": "I was part of a large team rebuilding a massive financial platform, transforming it from a monolithic, single-database design into a microservices architecture. The system comprises over 30 microservices and includes a complex framework to address scalability, availability, and data consistency challenges. It is designed to be highly configurable and extendable, with the ability to be deployed in the cloud or on-premises and built upon by customers.\nStack:\nASP.NET microservices with an internal gRPC communication layer and REST facades\nMicrofrontend architecture to support thousands of frontend applications\nMultiple abstractions over external systems (message brokers, databases, container orchestrators) to enable different configurations for various customers\nKey contributions:\nArchitecture design\nFocused on improving developer experience by creating a comprehensive set of reusable libraries\nDesigned project patterns to be easily understood and applied by AI agents",
+      "highlights": [
+        "Over 20 microservices",
+        "1,5 mln lines of code",
+        "Extensive set of libraries for both internal and external use (aka. Framework)"
+      ],
+      "keywords": [
+        "Backend",
+        ".NET",
+        "Microservices",
+        "Kubernetes"
+      ],
+      "roles": [
+        "Software Architect",
+        "Lead Backend Developer",
+        "Technical Team Lead"
+      ]
+    },
+    {
+      "name": "Microbe",
+      "url": "http://microbe.pl",
+      "startDate": "2016-04",
+      "description": "Distributed music recognition backend - Designed, developed and maintained a system for continuous music recognition from 100+ radio and TV streams. Built real-time monitoring (React.js, SignalR, Akka.NET), a custom LMDB-based fingerprinting database (100k+ samples), and a C#-optimized Echoprint algorithm. Delivered supporting administration and track delivery tools.",
+      "keywords": [
+        ".NET",
+        "Backend"
+      ],
+      "highlights": [
+        "Continous process of over 100 radio and TV streams",
+        "High-Availability setup",
+        "Extensive tooling around samples and data management",
+        "Low-level C# optimizations",
+        "Custom LMDB-based database for samples"
+      ],
+      "roles": [
+        "Software Architect",
+        "Lead Backend Developer",
+        "Technical Team Lead"
+      ]
+    },
+    {
+      "name": "Kiru",
+      "startDate": "2020-08",
+      "endDate": "2022-04",
+      "description": "On mobile side:\nDevelopment of big (500k lines of code) Android mobile application based on MVI patterns using Jetpack Compose. Mobile (iOS and Android) team leader.\nOn Backend side:\nArchitecture and development of multiple microservices in AWS cloud.",
+      "keywords": [
+        "Backend",
+        "Android",
+        "iOS",
+        ".NET",
+        "AWS",
+        "Microservices"
+      ],
+      "highlights": [
+        "Part of system design and architecture for both mobile and backend",
+        "Highly distributed application designed around MongoDB and AWS services",
+        "Highly modularized mobile application with over 500k lines of code"
+      ],
+      "roles": [
+        "Backend Developer",
+        "Lead Android Developer",
+        "Mobile Team Leader"
+      ]
+    },
+    {
+      "name": "Empik Music",
+      "url": "https://www.empik.com/music",
+      "startDate": "2019-11",
+      "endDate": "2020-04",
+      "description": "The largest music streaming platform in Poland and a direct competitor to Spotify, later shut down by Empik after a few years.\nI served as Lead Android Developer, responsible for mobile app delivery, R&amp;D, and overall system architecture.",
+      "keywords": [
+        "Android"
+      ],
+      "highlights": [
+        "Largest music streaming platform in Poland",
+        "Resilient and efficient streaming designed around HLS protocol",
+        "Highly modularized mobile application with over 200k lines of code"
+      ],
+      "roles": [
+        "Backend Developer",
+        "Lead Android Developer",
+        "Mobile Team Leader"
+      ]
+    },
+    {
+      "name": "SoundFingerprinting.Extensions.LMDB",
+      "url": "https://github.com/jakoss/SoundFingerprinting.Extensions.LMDB",
+      "startDate": "2018-03",
+      "description": "Extremly fast, multiplatform and open-sourced LMDB-based adapter to SoundFingerprinting algorithm.",
+      "keywords": [
+        "Databases",
+        "Open Source"
+      ],
+      "highlights": [
+        "Open Source database adapter for SoundFingerprinting library"
+      ],
+      "roles": [
+        "Developer",
+        "Project Maintainer"
+      ]
+    },
+    {
+      "name": "GOON Platform",
+      "startDate": "2016-03",
+      "description": "Android applications for music streaming platform for business (for example played in public spaces like restaurants and gyms)",
+      "keywords": [
+        "Android",
+        "Streaming"
+      ],
+      "highlights": [
+        "Resilient and efficient streaming designed around HLS protocol",
+        "White label application sold to third-party partners"
+      ],
+      "roles": [
+        "Lead Android Developer",
+        "Mobile Team Leader"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Silesian University of Technology",
+      "area": "Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2012",
+      "endDate": "2016",
+      "score": "4.5"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Software Architecture",
+      "level": "Advanced",
+      "keywords": [
+        "Solution design",
+        "Distributed Architectures",
+        "Diagrams",
+        "Cloud"
+      ]
+    },
+    {
+      "name": "Backend Development",
+      "level": "Expert",
+      "keywords": [
+        ".NET",
+        "C#",
+        "ASP.NET Core",
+        "EntityFramework Core",
+        "Libraries and Tooling Development"
+      ]
+    },
+    {
+      "name": "Android Development",
+      "level": "Expert",
+      "keywords": [
+        "Kotlin",
+        "Native",
+        "Jetpack Compose",
+        "Kotlin Multiplatform"
+      ]
+    },
+    {
+      "name": "Technical Leadership",
+      "level": "Advanced",
+      "keywords": [
+        "Agile",
+        "Mentoring",
+        "Review",
+        "Teaching"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Professional Cloud Architect",
+      "issuer": "Google Cloud",
+      "date": "August 2023",
+      "url": "https://google.accredible.com/04481543-0d93-40c7-ac17-0de3b48240df#acc.SsKzCxJG"
+    },
+    {
+      "name": "Komunikacja i budowanie relacji w zespole oraz z partnerami w biznesie w oparciu o style myślenia FRIS",
+      "issuer": "Kirov&Partners",
+      "date": "September 2023",
+      "url": ""
+    }
+  ],
+  "languages": [
+    {
+      "language": "Polish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Proficient"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Smart Home",
+      "keywords": [
+        "HomeAssistant",
+        "Automation",
+        "Homelab"
+      ]
+    },
+    {
+      "name": "Books",
+      "keywords": [
+        "Fantasy",
+        "Satirical",
+        "Science Fiction"
+      ]
+    }
+  ]
+}

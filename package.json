@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "export": "resumed export resume.json"
+  },
+  "dependencies": {
+    "jsonresume-theme-even": "^0.23.0",
+    "puppeteer": "^24.16.2",
+    "resumed": "^6.0.0"
+  }
+}
