@@ -32,10 +32,10 @@ jobs:
           set -e
           rm -rf site || true
           mkdir -p site
-          if [ -f "render.html" ]; then
-            cp render.html site/index.html
+          if [ -f "resume.html" ]; then
+            cp resume.html site/index.html
           else
-            echo "render.html not found" >&2
+            echo "resume.html not found" >&2
             exit 1
           fi
 
