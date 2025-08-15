@@ -62,22 +62,11 @@ jobs:
             echo "tag=$ref" >> $GITHUB_OUTPUT
           fi
 
-      - name: Create GitHub release
-        id: create_release
-        uses: actions/create-release@v1
+      - name: Create release and upload PDF
+        uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ steps.release_tag.outputs.tag }}
-          release_name: ${{ steps.release_tag.outputs.tag }}
-          body: "Automated resume export PDF"
-          draft: false
-          prerelease: false
+          name: ${{ steps.release_tag.outputs.tag }}
+          files: ${{ steps.find_pdf.outputs.pdf_path }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload PDF to release
-        uses: actions/upload-release-asset@v2
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ${{ steps.find_pdf.outputs.pdf_path }}
-          asset_name: resume.pdf
-          asset_content_type: application/pdf
