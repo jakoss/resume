@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "export": "resumed export resume.json"
+    "export": "resumed export resume.json",
+    "render": "resumed render resume.json"
   },
   "dependencies": {
     "jsonresume-theme-even": "^0.23.0",
