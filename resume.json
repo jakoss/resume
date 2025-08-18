@@ -37,7 +37,6 @@
       "position": "Technical Team Lead",
       "url": "https://www.euvic.com",
       "startDate": "2021-06",
-      "endDate": null,
       "summary": "As a Technical Team Lead, I’ve focused on improving developer experience, establishing patterns, jumpstarting large projects, architecting solutions, and mentoring other developers.",
       "highlights": [
         "Led a team of developers in creating a new microservices architecture for a financial platform",
@@ -271,14 +270,13 @@
     {
       "name": "Professional Cloud Architect",
       "issuer": "Google Cloud",
-      "date": "August 2023",
+      "date": "2023-08-30",
       "url": "https://google.accredible.com/04481543-0d93-40c7-ac17-0de3b48240df#acc.SsKzCxJG"
     },
     {
       "name": "Komunikacja i budowanie relacji w zespole oraz z partnerami w biznesie w oparciu o style myślenia FRIS",
       "issuer": "Kirov&Partners",
-      "date": "September 2023",
-      "url": ""
+      "date": "2023-09-28"
     }
   ],
   "languages": [
