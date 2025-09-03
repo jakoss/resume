@@ -13,7 +13,7 @@
     "phone": "+48 721 043 077",
     "url": "https://github.com/jakoss",
     "image": "https://gravatar.com/avatar/be47884caaad28586216cc9ff22dab71717f6abea7402cc0142caa7b2cbd3c98?s=300",
-    "summary": "I’m a pragmatic and flexible software engineer with extensive experience in software architecture, backend systems, and mobile technologies.\n\nA passionate supporter of open source, I frequently contribute my own work to the community.\n\nWhile I’m always eager to learn and adopt new technologies, my core expertise lies in Android/Kotlin (mobile) and .NET (backend and tooling).\n\nAs a Technical Team Lead, I’ve focused on improving developer experience, establishing patterns, jumpstarting large projects, architecting solutions, and mentoring other developers.",
+    "summary": "I'm a pragmatic and flexible software engineer with extensive experience in software architecture, backend systems, and mobile technologies.\n\nA passionate supporter of open source, I frequently contribute my own work to the community.\n\nWhile I’m always eager to learn and adopt new technologies, my core expertise lies in Android/Kotlin (mobile) and .NET (backend and tooling).\n\nAs a Technical Team Lead, I’ve focused on improving developer experience, establishing patterns, jumpstarting large projects, architecting solutions, and mentoring other developers.",
     "location": {
       "city": "Cracow Metropolitan Area",
       "countryCode": "PL"
@@ -37,10 +37,11 @@
       "position": "Technical Team Lead",
       "url": "https://www.euvic.com",
       "startDate": "2021-06",
-      "summary": "As a Technical Team Lead, I’ve focused on improving developer experience, establishing patterns, jumpstarting large projects, architecting solutions, and mentoring other developers.",
+      "summary": "As a Technical Team Lead, I've focused on improving developer experience, establishing patterns, jumpstarting large projects, architecting solutions, and mentoring other developers.",
       "highlights": [
         "Led a team of developers in creating a new microservices architecture for a financial platform",
         "Created architecture diagrams and documentation to facilitate knowledge sharing",
+        "Created a set of libraries, tools and frameworks to improve developer productivity and accelerate development",
         "Established patterns, guidelines, and best practices for the developments teams. Created automations to verify and validate code quality",
         "Implemented CI/CD pipelines to streamline the development process"
       ]
